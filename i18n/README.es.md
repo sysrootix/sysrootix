@@ -30,13 +30,13 @@ No tecleo la mayor parte de mi código. Diseño, corto el trabajo en especificac
 
 ```mermaid
 flowchart LR
-  me(["yo"]) -->|tarea| opus["Opus · planifica, escribe la spec"]
-  opus -->|spec| haiku["Haiku · hasta 3 en paralelo"]
-  haiku -->|diff| rev["Revisor · lee cada diff"]
-  rev --> ok{"¿verify.sh en verde?"}
-  ok -->|sí| ship(["a producción"])
-  ok -->|no| haiku
-  rev -.->|error repetido| log[("diario → nueva regla en un hook")]
+  ME([yo]) -- tarea --> OP[Opus: planifica, escribe la spec]
+  OP -- spec --> HW[Haiku: hasta 3 en paralelo]
+  HW -- diff --> RV[Revisor: lee cada diff]
+  RV --> OK{¿verify.sh en verde?}
+  OK -- sí --> SH([a producción])
+  OK -- no --> HW
+  RV -. error repetido .-> JR[(diario: nueva regla en un hook)]
 ```
 
 ## Pulso

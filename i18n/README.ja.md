@@ -30,13 +30,13 @@
 
 ```mermaid
 flowchart LR
-  me(["わたし"]) -->|タスク| opus["Opus · 計画と仕様"]
-  opus -->|仕様| haiku["Haiku ワーカー · 最大 3 並列"]
-  haiku -->|diff| rev["レビュアー · すべての diff を読む"]
-  rev --> ok{"verify.sh は緑？"}
-  ok -->|はい| ship(["リリース"])
-  ok -->|いいえ| haiku
-  rev -.->|同じミス| log[("ジャーナル → 新しいフックルール")]
+  ME([わたし]) -- タスク --> OP[Opus: 計画と仕様]
+  OP -- 仕様 --> HW[Haiku ワーカー: 最大 3 並列]
+  HW -- diff --> RV[レビュアー: すべての diff を読む]
+  RV --> OK{verify.sh は緑？}
+  OK -- はい --> SH([リリース])
+  OK -- いいえ --> HW
+  RV -. 同じミス .-> JR[(ジャーナル: 新しいフックルール)]
 ```
 
 ## パルス

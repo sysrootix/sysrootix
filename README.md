@@ -30,13 +30,13 @@ I don't type most of my code. I design, cut the work into small specs and accept
 
 ```mermaid
 flowchart LR
-  me(["me"]) -->|task| opus["Opus · plans, writes the spec"]
-  opus -->|spec| haiku["Haiku workers · up to 3 at once"]
-  haiku -->|diff| rev["Reviewer · reads every diff"]
-  rev --> ok{"verify.sh green?"}
-  ok -->|yes| ship(["ship"])
-  ok -->|no| haiku
-  rev -.->|repeated mistake| log[("journal → a new hook rule")]
+  ME([me]) -- task --> OP[Opus: plans, writes the spec]
+  OP -- spec --> HW[Haiku workers: up to 3 at once]
+  HW -- diff --> RV[Reviewer: reads every diff]
+  RV --> OK{verify.sh green?}
+  OK -- yes --> SH([ship])
+  OK -- no --> HW
+  RV -. repeated mistake .-> JR[(journal: a new hook rule)]
 ```
 
 ## Pulse

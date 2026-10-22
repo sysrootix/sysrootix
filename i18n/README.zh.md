@@ -30,13 +30,13 @@
 
 ```mermaid
 flowchart LR
-  me(["我"]) -->|任务| opus["Opus · 规划，写规格"]
-  opus -->|规格| haiku["Haiku 工人 · 最多 3 个并行"]
-  haiku -->|diff| rev["审查者 · 读每一个 diff"]
-  rev --> ok{"verify.sh 通过？"}
-  ok -->|是| ship(["上线"])
-  ok -->|否| haiku
-  rev -.->|重复的错误| log[("日志 → 新的钩子规则")]
+  ME([我]) -- 任务 --> OP[Opus: 规划，写规格]
+  OP -- 规格 --> HW[Haiku 工人: 最多 3 个并行]
+  HW -- diff --> RV[审查者: 读每一个 diff]
+  RV --> OK{verify.sh 通过？}
+  OK -- 是 --> SH([上线])
+  OK -- 否 --> HW
+  RV -. 重复的错误 .-> JR[(日志: 新的钩子规则)]
 ```
 
 ## 脉搏

@@ -2,20 +2,20 @@
         .        +10
    .  ___  .     it's already tomorrow here.
      /   \       hi, curious human. view-source is the best part of a profile.
-  --|  o  |--    the pictures are built by scripts/build.mjs every morning.
+  --|  o  |--    the pictures are rebuilt every hour, weather included.
      \___/
    '    |    '
 -->
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img alt="Hi, I'm Nikita — full-stack developer from Khabarovsk, UTC+10" src="assets/header-light.svg"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/header-dark.svg"><img alt="Hi, I'm Nikita — full-stack developer from Khabarovsk, UTC+10" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/header-light.svg"></picture></p>
 
 <p align="center"><sub><b>English</b> · <a href="i18n/README.ru.md">Русский</a> · <a href="i18n/README.ja.md">日本語</a> · <a href="i18n/README.zh.md">中文</a> · <a href="i18n/README.es.md">Español</a></sub></p>
 
 ## Things I ship
 
-<p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/check-usage-dark.svg"><img alt="CheckUsage" src="assets/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/bandito-dark.svg"><img alt="Bandito" src="assets/cards/bandito-light.svg" width="49%"></picture></a></p>
-<p><a href="https://github.com/sysrootix/FreeBright"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/freebright-dark.svg"><img alt="FreeBright" src="assets/cards/freebright-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/sysrootix/activity-line"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/activity-line-dark.svg"><img alt="ActivityLine" src="assets/cards/activity-line-light.svg" width="49%"></picture></a></p>
-<p><a href="https://github.com/sysrootix/claude-agent-team"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/claude-agent-team-dark.svg"><img alt="claude-agent-team" src="assets/cards/claude-agent-team-light.svg" width="49%"></picture></a>&nbsp;<a href="https://omut.chat"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/omut-dark.svg"><img alt="Omut" src="assets/cards/omut-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-dark.svg"><img alt="CheckUsage" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-dark.svg"><img alt="Bandito" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/FreeBright"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/freebright-dark.svg"><img alt="FreeBright" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/freebright-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/sysrootix/activity-line"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/activity-line-dark.svg"><img alt="ActivityLine" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/activity-line-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/claude-agent-team"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/claude-agent-team-dark.svg"><img alt="claude-agent-team" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/claude-agent-team-light.svg" width="49%"></picture></a>&nbsp;<a href="https://omut.chat"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/omut-dark.svg"><img alt="Omut" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/omut-light.svg" width="49%"></picture></a></p>
 
 ## By day
 
@@ -28,6 +28,8 @@ I build the whole digital side of retail chains in Russia's Far East, alone and 
 
 I don't type most of my code. I design, cut the work into small specs and accept the result; a team of Claude agents does the rest. The whole setup is open source: [claude-agent-team](https://github.com/sysrootix/claude-agent-team).
 
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/replay-dark.svg"><img alt="Replay of an agent session" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/replay-light.svg"></picture></p>
+
 ```mermaid
 flowchart LR
   ME([me]) -- task --> OP[Opus: plans, writes the spec]
@@ -39,11 +41,15 @@ flowchart LR
   RV -. repeated mistake .-> JR[(journal: a new hook rule)]
 ```
 
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/crew-dark.svg"><img alt="My AI crew this week" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/crew-light.svg"></picture></p>
+
+<sub>Live numbers from my agent log, pushed from my Mac every day: runs, agent-hours, tool calls and diffs the reviewer sent back.</sub>
+
 ## Pulse
 
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="assets/pulse-dark.svg"><img alt="Pulse" src="assets/pulse-light.svg"></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/pulse-dark.svg"><img alt="Pulse" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/pulse-light.svg"></picture></p>
 
-A year of commits as one line, the way [ActivityLine](https://github.com/sysrootix/activity-line) draws a CPU. Rebuilt every morning at 09:00 my time by a GitHub Action.
+A year of commits as one line, the way [ActivityLine](https://github.com/sysrootix/activity-line) draws a CPU. A GitHub Action redraws it every hour, together with the weather in the header.
 
 ## Stack
 
@@ -53,6 +59,12 @@ A year of commits as one line, the way [ActivityLine](https://github.com/sysroot
 
 - [**Полчища**](https://sysrootix.github.io/polchisha/) — 3D survivors in the browser, one 20-minute run
 - [**sysrootix.watch**](https://sysrootix.watch) — my own home cinema in the browser: Rust + React
+
+## Guestbook
+
+Leave a wave: [open an issue titled “wave”](https://github.com/sysrootix/sysrootix/issues/new?title=wave&body=Just%20press%20Create.%20A%20bot%20puts%20your%20avatar%20on%20the%20wall%20in%20a%20minute.) and press Create. Within a minute a bot puts your avatar on the wall and closes the issue.
+
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/wall-dark.svg"><img alt="Guestbook" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/wall-light.svg"></picture></p>
 
 <details>
 <summary><b>2025: where it started</b></summary>

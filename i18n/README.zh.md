@@ -2,20 +2,20 @@
         .        +10
    .  ___  .     it's already tomorrow here.
      /   \       hi, curious human. view-source is the best part of a profile.
-  --|  o  |--    the pictures are built by scripts/build.mjs every morning.
+  --|  o  |--    the pictures are rebuilt every hour, weather included.
      \___/
    '    |    '
 -->
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/header-dark.svg"><img alt="你好，我是尼基塔 — 来自哈巴罗夫斯克的全栈开发者（UTC+10）" src="../assets/header-light.svg"></picture></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/header-dark.svg"><img alt="你好，我是尼基塔 — 来自哈巴罗夫斯克的全栈开发者（UTC+10）" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/header-light.svg"></picture></p>
 
 <p align="center"><sub><a href="../README.md">English</a> · <a href="README.ru.md">Русский</a> · <a href="README.ja.md">日本語</a> · <b>中文</b> · <a href="README.es.md">Español</a></sub></p>
 
 ## 我做的东西
 
-<p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/check-usage-dark.svg"><img alt="CheckUsage" src="../assets/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/bandito-dark.svg"><img alt="Bandito" src="../assets/cards/bandito-light.svg" width="49%"></picture></a></p>
-<p><a href="https://github.com/sysrootix/FreeBright"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/freebright-dark.svg"><img alt="FreeBright" src="../assets/cards/freebright-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/sysrootix/activity-line"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/activity-line-dark.svg"><img alt="ActivityLine" src="../assets/cards/activity-line-light.svg" width="49%"></picture></a></p>
-<p><a href="https://github.com/sysrootix/claude-agent-team"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/claude-agent-team-dark.svg"><img alt="claude-agent-team" src="../assets/cards/claude-agent-team-light.svg" width="49%"></picture></a>&nbsp;<a href="https://omut.chat"><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/cards/omut-dark.svg"><img alt="Omut" src="../assets/cards/omut-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-dark.svg"><img alt="CheckUsage" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-dark.svg"><img alt="Bandito" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/FreeBright"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/freebright-dark.svg"><img alt="FreeBright" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/freebright-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/sysrootix/activity-line"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/activity-line-dark.svg"><img alt="ActivityLine" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/activity-line-light.svg" width="49%"></picture></a></p>
+<p><a href="https://github.com/sysrootix/claude-agent-team"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/claude-agent-team-dark.svg"><img alt="claude-agent-team" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/claude-agent-team-light.svg" width="49%"></picture></a>&nbsp;<a href="https://omut.chat"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/omut-dark.svg"><img alt="Omut" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/omut-light.svg" width="49%"></picture></a></p>
 
 ## 白天
 
@@ -28,6 +28,8 @@
 
 大部分代码不是我敲的。我负责设计、把工作切成小的规格说明、验收结果——剩下的交给一支 Claude 智能体团队。整套流程完全开源：[claude-agent-team](https://github.com/sysrootix/claude-agent-team)。
 
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/replay-dark.svg"><img alt="Replay of an agent session" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/replay-light.svg"></picture></p>
+
 ```mermaid
 flowchart LR
   ME([我]) -- 任务 --> OP[Opus: 规划，写规格]
@@ -39,11 +41,15 @@ flowchart LR
   RV -. 重复的错误 .-> JR[(日志: 新的钩子规则)]
 ```
 
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/crew-dark.svg"><img alt="My AI crew this week" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/crew-light.svg"></picture></p>
+
+<sub>来自我的智能体日志的实时数据，每天由我的 Mac 推送：运行次数、工作时长、工具调用，以及被审查者退回的 diff。</sub>
+
 ## 脉搏
 
-<p><picture><source media="(prefers-color-scheme: dark)" srcset="../assets/pulse-dark.svg"><img alt="脉搏" src="../assets/pulse-light.svg"></picture></p>
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/pulse-dark.svg"><img alt="脉搏" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/pulse-light.svg"></picture></p>
 
-一年的提交画成一条线，就像 [ActivityLine](https://github.com/sysrootix/activity-line) 画 CPU 那样。每天早上 9:00（当地时间）由 GitHub Action 重新生成。
+一年的提交画成一条线，就像 [ActivityLine](https://github.com/sysrootix/activity-line) 画 CPU 那样。GitHub Action 每小时重绘一次，顺带更新页头的天气。
 
 ## 技术栈
 
@@ -53,6 +59,12 @@ flowchart LR
 
 - [**Полчища**](https://sysrootix.github.io/polchisha/) — 浏览器里的 3D 割草生存游戏，一局 20 分钟
 - [**sysrootix.watch**](https://sysrootix.watch) — 我自己的在线家庭影院：Rust + React
+
+## 留言墙
+
+打个招呼：[新建一个标题为「wave」的 issue](https://github.com/sysrootix/sysrootix/issues/new?title=wave&body=%E7%82%B9%20Create%20%E5%B0%B1%E8%A1%8C%E3%80%82%E4%B8%80%E5%88%86%E9%92%9F%E5%86%85%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%BC%9A%E6%8A%8A%E4%BD%A0%E7%9A%84%E5%A4%B4%E5%83%8F%E6%8C%82%E4%B8%8A%E5%A2%99%E3%80%82)，点 Create 即可。一分钟内机器人会把你的头像挂上墙并关闭 issue。
+
+<p><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/wall-dark.svg"><img alt="留言墙" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/wall-light.svg"></picture></p>
 
 <details>
 <summary><b>2025：一切的开始</b></summary>

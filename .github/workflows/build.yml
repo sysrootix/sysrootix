@@ -2,14 +2,17 @@ name: build profile pictures
 
 on:
   schedule:
-    - cron: '0 23 * * *' # 09:00 in Khabarovsk
+    - cron: '17 * * * *' # every hour: weather, sun and moon, stars, pulse
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/**']
+    paths: ['scripts/**', 'data/**']
+  issues:
+    types: [opened]
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: build
@@ -17,21 +20,42 @@ concurrency:
 
 jobs:
   build:
+    # "contains" is case-insensitive: Wave, WAVE and "wave hi" all count
+    if: github.event_name != 'issues' || contains(github.event.issue.title, 'wave')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: put the guest on the wall
+        if: github.event_name == 'issues'
+        env:
+          LOGIN: ${{ github.event.issue.user.login }}
+          GUEST_ID: ${{ github.event.issue.user.id }}
+          ISSUE: ${{ github.event.issue.number }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          state=$(node scripts/wave.mjs)
+          if [ "$state" = added ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add data/guests.json
+            git commit -qm "guestbook: @$LOGIN waved"
+            git pull -q --rebase && git push -q
+            msg="Thanks for the wave, @$LOGIN! You're on the wall at https://github.com/sysrootix — the picture refreshes in a few minutes."
+          else
+            msg="You're already on the wall, @$LOGIN. Thanks for coming back!"
+          fi
+          gh issue close "$ISSUE" -R "$GITHUB_REPOSITORY" -c "$msg"
       - run: node scripts/build.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: commit if changed
+      - name: publish to the output branch
+        # one force-pushed commit: hourly pictures never pile up in history
         run: |
-          git add assets
-          git diff --cached --quiet && exit 0
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'chore: rebuild profile pictures'
-          git pull --rebase
-          git push
+          cd out
+          git init -q -b output
+          git add -A
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -qm "pictures $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:output

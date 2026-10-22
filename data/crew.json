@@ -1,0 +1,96 @@
+{
+  "updated": "2026-10-22T06:16:10Z",
+  "days": [
+    {
+      "date": "2026-10-09",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-10",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-11",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-12",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-13",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-14",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-15",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-10-16",
+      "haiku": 24,
+      "sonnet": 8,
+      "review": 18
+    },
+    {
+      "date": "2026-10-17",
+      "haiku": 9,
+      "sonnet": 6,
+      "review": 10
+    },
+    {
+      "date": "2026-10-18",
+      "haiku": 1,
+      "sonnet": 0,
+      "review": 2
+    },
+    {
+      "date": "2026-10-19",
+      "haiku": 13,
+      "sonnet": 7,
+      "review": 10
+    },
+    {
+      "date": "2026-10-20",
+      "haiku": 34,
+      "sonnet": 12,
+      "review": 37
+    },
+    {
+      "date": "2026-10-21",
+      "haiku": 61,
+      "sonnet": 23,
+      "review": 61
+    },
+    {
+      "date": "2026-10-22",
+      "haiku": 13,
+      "sonnet": 7,
+      "review": 15
+    }
+  ],
+  "week": {
+    "runs": 371,
+    "hours": 82,
+    "tools": 14521,
+    "reviews": 153,
+    "returned": 45
+  }
+}

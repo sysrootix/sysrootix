@@ -1,12 +1,6 @@
 {
-  "updated": "2026-10-23T13:40:00Z",
+  "updated": "2026-10-24T13:42:20Z",
   "days": [
-    {
-      "date": "2026-10-10",
-      "haiku": 0,
-      "sonnet": 0,
-      "review": 0
-    },
     {
       "date": "2026-10-11",
       "haiku": 0,
@@ -84,13 +78,19 @@
       "haiku": 14,
       "sonnet": 10,
       "review": 9
+    },
+    {
+      "date": "2026-10-24",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
     }
   ],
   "week": {
-    "runs": 358,
-    "hours": 72,
-    "tools": 13311,
-    "reviews": 145,
-    "returned": 47
+    "runs": 333,
+    "hours": 65,
+    "tools": 12263,
+    "reviews": 135,
+    "returned": 43
   }
 }

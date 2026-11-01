@@ -1,12 +1,6 @@
 {
-  "updated": "2026-10-31T13:43:48Z",
+  "updated": "2026-11-01T13:53:43Z",
   "days": [
-    {
-      "date": "2026-10-18",
-      "haiku": 1,
-      "sonnet": 0,
-      "review": 2
-    },
     {
       "date": "2026-10-19",
       "haiku": 13,
@@ -81,6 +75,12 @@
     },
     {
       "date": "2026-10-31",
+      "haiku": 0,
+      "sonnet": 0,
+      "review": 0
+    },
+    {
+      "date": "2026-11-01",
       "haiku": 0,
       "sonnet": 0,
       "review": 0

@@ -11,6 +11,11 @@
 
 <p align="center"><sub><b>English</b> · <a href="i18n/README.ru.md">Русский</a> · <a href="i18n/README.ja.md">日本語</a> · <a href="i18n/README.zh.md">中文</a> · <a href="i18n/README.es.md">Español</a></sub></p>
 
+## Open to work
+
+Looking for a **tech lead / head of IT** role, remote or in Khabarovsk (UTC+10).
+Portfolio and résumé: [sysrootix.com/portfolio](https://sysrootix.com/portfolio/) · Telegram: [@sysrootix](https://t.me/sysrootix)
+
 ## Things I ship
 
 <p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-dark.svg"><img alt="CheckUsage" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-dark.svg"><img alt="Bandito" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-light.svg" width="49%"></picture></a></p>

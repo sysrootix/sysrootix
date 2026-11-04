@@ -11,6 +11,11 @@
 
 <p align="center"><sub><a href="../README.md">English</a> · <b>Русский</b> · <a href="README.ja.md">日本語</a> · <a href="README.zh.md">中文</a> · <a href="README.es.md">Español</a></sub></p>
 
+## Открыт к предложениям
+
+Ищу роль **техлида или руководителя IT**, удалённо или в Хабаровске (UTC+10).
+Портфолио и резюме: [sysrootix.com/portfolio](https://sysrootix.com/portfolio/) · Telegram: [@sysrootix](https://t.me/sysrootix)
+
 ## Что я делаю
 
 <p><a href="https://github.com/sysrootix/check-usage"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-dark.svg"><img alt="CheckUsage" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/check-usage-light.svg" width="49%"></picture></a>&nbsp;<a href="https://github.com/banditohq/bandito"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-dark.svg"><img alt="Bandito" src="https://raw.githubusercontent.com/sysrootix/sysrootix/output/cards/bandito-light.svg" width="49%"></picture></a></p>
